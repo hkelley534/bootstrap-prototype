@@ -1,29 +1,21 @@
-.nav-link:hover {
-  color: blue !important;
-}
-
-.bg-dark {
-  background-color: #111 !important;
-}
-
-.text-light:hover {
-  color: grey !important; 
+.text-gray {
+  color: #555;
 }
 
 .bg-light-purple {
-background: radial-gradient(circle, rgba(119,221,238,.5) 0%, rgba(170,170,221,1) 100%);
+background: radial-gradient(circle, #a0a0ff 0%, #aad 100%);
 }
 
-.active {
-  background-color: #aad !important
+.navbar-brand:hover {
+  color: #99f !important;
 }
 
-h1 {
+.serif {
+  font-family: 'Junge', serif;
+}
+
+.sans {
   font-family: 'Gemunu Libre', sans-serif;
-}
-
-.z-index-1 {
-  z-index: 1;
 }
 
 .image-max {
@@ -32,23 +24,17 @@ h1 {
 
 .image-shadow {
   padding: 0;
-  border: 5px  black;
-  box-shadow: 0 0 0 0 #ADADEE;
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green !important;
 }
 
 .image-shadow:hover {
-  box-shadow: 0 0 40px 20px lawngreen;
+  transform: rotate(-2deg);
 }
 
-#spirals {
-  width: 100% ;
-  z-index: 0;
-  position: absolute;
-  left: 0;
-  top: 50px;
+.btn:hover {
+  background-color: #99f;
+  border: 2px solid black;
 }
-
-
 
 /* Home */
 
@@ -64,4 +50,25 @@ h1 {
   .bg-dark {
     background-color: rgba(0, 0, 0, 0) !important;
   }
+
+  .active h1{
+    color: #99f!important;
+  }
+}
+
+@media (min-width: 768px) {
+  .active {
+    background-color: #99f!important;
+  }
+  
+  .nav-link:hover {
+    background-color: #a0a0ff !important;
+  }
+  
+  .nav-link:hover h1 {
+    color: white !important;
+    text-decoration: underline dashed !important;
+    text-underline-position: under !important; 
+  }
+
 }
