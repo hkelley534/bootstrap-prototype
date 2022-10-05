@@ -23,17 +23,13 @@ h1:hover {
 
 /* Home */
 
-  /* Main Image */
-  .image-max {
-    max-width: 500px;
-  }
-
-  .image-shadow {
+  /* Portrait */
+  .portrait-shadow {
     padding: 0;
     box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green !important;
   }
 
-  .image-shadow:hover {
+  .portrait-shadow:hover {
     transform: rotate(-2deg);
   }
 
@@ -45,31 +41,60 @@ h1:hover {
 
 /* About */
 
+  /* Github Logo */
+  .logo-max {
+    max-width: 100px;
+    background-image: url("assets/github-logo.png");
+  }
+
+  .logo-max:hover {
+    background-image: url("assets/github-logo-active.png");
+  }
+
+
 /* Contact */
 
+
+/* Mobile View */
 @media (max-width: 768px) {
+  
+  /* Nav Links */
+  .active h1{
+    color: #99f !important;
+  }
+
+  /* Portrait */
+  .portrait-max {
+    max-width: 300px;
+  }
+
+  /* About Button */
   #about-button {
     margin-top: 1.5rem;
   }
 
-  .active h1{
-    color: #99f!important;
-  }
 }
 
+/* Desktop View */
 @media (min-width: 768px) {
+
+  /* Nav Links */
   .active {
     background-color: #99f!important;
   }
-  
+
   .nav-link:hover {
     background-color: #a0a0ff !important;
   }
-  
+
   .nav-link:hover h1 {
     color: white !important;
     text-decoration: underline dashed !important;
     text-underline-position: under !important; 
   }
 
+  /* Portrait */
+  .portrait-max {
+    max-width: 500px;
+  }
 }
