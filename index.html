@@ -4,35 +4,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Hunter Kelley</a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+<body class="bg-dark">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow bg-light">
+    <!-- Navbar Brand -->
+    <a class="navbar-brand px-md-5 text-dark" href="#">Hunter Kelley</a>
+
+    <!-- Navbar Mobile Menu Button-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-links" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar Links -->
+    <div  class="collapse navbar-collapse nav-tabs" id="nav-links">
+      <ul class="navbar-nav right px-md-5">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark active rounded" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link text-dark">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link text-dark">Contact</a>
+        </li>
+      </ul>
     </div>
   </nav>
-  <script src="bootstrap-5.2.1-dist/js/bootstrap.min.js"></script>
-</body>
+
+  <!-- <div class="mt-5">
+    <h1 class="text-center">Hunter Kelley</h1> 
+  </div> -->
+
+  <div class="container bg-light-purple p-5">
+    <div class="row"> <!--border border-5 border-dark rounded-circle-->
+      <img class="col-md-6 image-shadow image-max m-auto" src="IMG_0849.jpg">
+
+      <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+        <h1 class="text-light display-2">Who Am I?</h1>
+        <a id="about-button" href="about.html" class="btn btn-outline-light text-light shadow-lg text-decoration-none" role="button">
+          <h1 class="display-5 rounded">About Me!</h1>
+        </a>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </html>
