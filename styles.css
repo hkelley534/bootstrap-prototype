@@ -1,15 +1,9 @@
-.text-gray {
-  color: #555;
-}
-
+/* Background */
 .bg-light-purple {
 background: radial-gradient(circle, #a0a0ff 0%, #aad 100%);
 }
 
-.navbar-brand:hover {
-  color: #99f !important;
-}
-
+/* Font */
 .serif {
   font-family: 'Junge', serif;
 }
@@ -18,25 +12,36 @@ background: radial-gradient(circle, #a0a0ff 0%, #aad 100%);
   font-family: 'Gemunu Libre', sans-serif;
 }
 
-.image-max {
-  max-width: 500px;
+h1:hover {
+  color: white !important;
 }
 
-.image-shadow {
-  padding: 0;
-  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green !important;
-}
-
-.image-shadow:hover {
-  transform: rotate(-2deg);
-}
-
-.btn:hover {
-  background-color: #99f;
-  border: 2px solid black;
+/* Navbar */
+.navbar-brand:hover {
+  color: #99f !important;
 }
 
 /* Home */
+
+  /* Main Image */
+  .image-max {
+    max-width: 500px;
+  }
+
+  .image-shadow {
+    padding: 0;
+    box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green !important;
+  }
+
+  .image-shadow:hover {
+    transform: rotate(-2deg);
+  }
+
+  /* About Button */
+  .btn:hover {
+    background-color: #99f;
+    border: 2px solid black !important;
+  }
 
 /* About */
 
@@ -45,10 +50,6 @@ background: radial-gradient(circle, #a0a0ff 0%, #aad 100%);
 @media (max-width: 768px) {
   #about-button {
     margin-top: 1.5rem;
-  }
-
-  .bg-dark {
-    background-color: rgba(0, 0, 0, 0) !important;
   }
 
   .active h1{
