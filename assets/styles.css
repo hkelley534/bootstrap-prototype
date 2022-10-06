@@ -12,10 +12,6 @@ background: radial-gradient(circle, #a0a0ff 0%, #aad 100%);
   font-family: 'Gemunu Libre', sans-serif;
 }
 
-h1:hover {
-  color: white !important;
-}
-
 /* Navbar */
 .navbar-brand:hover {
   color: #99f !important;
