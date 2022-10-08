@@ -7,19 +7,17 @@ background: radial-gradient(circle, #a0a0ff 0%, #aad 100%);
   background-color: #99f;
 }
 
-.bottom-right {
-  position: absolute;
-  bottom: 0 !important;
-  right: 0 !important;
-}
-
 /* Font */
 .serif {
-  font-family: 'Junge', serif;
+  font-family: 'Merriweather', serif;
 }
 
 .sans {
   font-family: 'Gemunu Libre', sans-serif;
+}
+
+.text-grey {
+  color: #444;
 }
 
 /* Navbar */
@@ -55,10 +53,12 @@ background: radial-gradient(circle, #a0a0ff 0%, #aad 100%);
   .logo-max:hover {
     opacity: 50%;
   }
-
-
-/* Contact */
-
+    
+  .bottom-right {
+    position: absolute;
+    bottom: 0 !important;
+    right: 0 !important;
+  }
 
 /* Mobile View */
 @media (max-width: 992px) {
@@ -70,7 +70,7 @@ background: radial-gradient(circle, #a0a0ff 0%, #aad 100%);
 
   /* Portrait */
   .portrait-max {
-    max-width: 300px;
+    max-width: 250px;
   }
 
   /* About Button */
@@ -101,6 +101,6 @@ background: radial-gradient(circle, #a0a0ff 0%, #aad 100%);
   /* Portrait */
   .portrait-max {
     width: auto;
-    max-width: 500px !important;
+    max-width: 400px !important;
   }
 }
