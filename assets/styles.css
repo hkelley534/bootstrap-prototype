@@ -3,6 +3,16 @@
 background: radial-gradient(circle, #a0a0ff 0%, #aad 100%);
 }
 
+.bg-dark-purple {
+  background-color: #99f;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+
 /* Font */
 .serif {
   font-family: 'Junge', serif;
@@ -39,12 +49,11 @@ background: radial-gradient(circle, #a0a0ff 0%, #aad 100%);
 
   /* Github Logo */
   .logo-max {
-    max-width: 100px;
-    background-image: url("assets/github-logo.png");
+    max-width: 60px;
   }
 
   .logo-max:hover {
-    background-image: url("assets/github-logo-active.png");
+    opacity: 50%;
   }
 
 
